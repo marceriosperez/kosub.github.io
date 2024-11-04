@@ -1,0 +1,322 @@
+/* Colores y estilos personalizados para el menú */
+.nav-link {
+    color: #2E4F9F; /* Color azul personalizado */
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #f39c12; /* Color al pasar el mouse */
+}
+
+/* Estilos para las barras de color debajo de los enlaces */
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Barras de color animadas al hover */
+}
+
+.navbar-brand img {
+    max-width: 120px; /* Tamaño máximo del logotipo */
+}
+
+/* Ajustes adicionales de responsividad */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+}
+}
+
+/* Bienvenida */
+.bienvenida {
+    background-color: #f5f5f5;
+}
+/* Bienvenida */
+.bienvenida {
+    background-color: #f5f5f5;
+}
+
+/* Team KOSUB */
+.team-kosub {
+    background-color: #0056b3;
+}
+
+/* Noticias */
+.noticias .card {
+    border: none;
+    background-color: #f5f5f5;
+}
+
+/* Cultura Coreana */
+.cultura-coreana {
+    background-color: #0056b3;
+}
+
+/* Frase de la Semana */
+.frase-semana {
+    background-color: #FF7069;
+}
+
+/* Contacto */
+.contacto {
+    background-color: #FF7069;
+}
+
+.contacto .form-control {
+    border-radius: 12px;
+}
+
+/* Footer */
+.footer-links a {
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* KOSUB */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    padding-bottom: 73px; /* Espacio debajo del logo */
+}
+
+/* Estilo para el círculo amarillo */
+.circle-yellow {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #FFA500; /* Amarillo */
+    border-radius: 50%;
+    right: -280px;
+    top: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Estilo para el círculo azul */
+.circle-blue {
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    background-color: #0052CC; /* Azul */
+    border-radius: 50%;
+    left: -50px;
+    top: 200px;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* Estilos para el texto del logo */
+.logo-text {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222; /* Color oscuro para el texto */
+    z-index: 3;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons {
+    display: flex;
+    flex-direction:row;
+    gap: 15px;
+    top: 20px; /* Ajustar para alinear con el logo */
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f3f3;
+    transition: background-color 0.3s;
+}
+
+.social-icon.facebook { background-color: #FAC21F; }
+.social-icon.instagram { background-color: #FF7069; }
+.social-icon.tiktok { background-color: #A9D320; }
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para la sección de Misión y Visión */
+.mission-vision-section {
+    padding-top: 470px; /* Espacio debajo de los círculos */
+}
+
+/* Estilos personalizados para las tarjetas */
+.custom-card {
+    border-radius: 70px 0 0 70px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Estilos específicos para las tarjetas de color */
+.blue-card {
+    background-color: #0052CC; /* Azul */
+    color: #ffffff;
+}
+
+.orange-card {
+    background-color: #FFA500; /* Naranja */
+    color: #ffffff;
+}
+
+/* Ajustes de los bordes redondeados por tarjeta */
+.custom-card:nth-child(1), .custom-card:nth-child(3) {
+    border-radius: 70px 0px 70px 0px; /* Izquierda y derecha */
+}
+
+.custom-card:nth-child(2) {
+    border-radius: 0 70px 70px 0; /* Derecha e izquierda */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .custom-card {
+        border-radius: 70px; /* Bordes redondeados en móviles */
+    }
+}
+
+
+
+/* K-Dramas seccion*/
+.kdramas-section {
+    padding-top: 80px; /* Espacio de 100px debajo del menú */
+}
+
+.title-kdramas {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    width: 300px;
+}
+
+/* Estilos para los títulos de secciones */
+.section-title {
+    padding-top: 100px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilos para las cards */
+.custom-card {
+    width: 494px;
+    height: 324px;
+    border-radius: 0px 70px 0 ; /* Borde redondeado a la izquierda */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #FF7069;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.coral-card {
+    background-color: #FF7069;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .custom-card {
+        width: 100%; /* Se ajusta al ancho completo en pantallas pequeñas */
+        height: auto;
+    }
+    
+    .title-kdramas {
+        width: 100%; /* Título se ajusta al ancho completo */
+        font-size: 2rem;
+    }
+}
+
+/* Estilos para la sección de K-dramas que marcaron una generación */
+.generation-section {
+    padding-top: 50px;
+}
+
+/* Título de la sección */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Sinopsis */
+.synopsis-box {
+    width: 300px;
+    background-color: #FF7069;
+    color: #fff;
+    border-radius: 25px 0 0 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen central */
+.main-image {
+    width: 300%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 0 70px 0 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Columna de imágenes al lado derecho */
+.image-column-box {
+    width: 197px;
+    height: 578px;
+    background-color: #FF7069;
+    border-radius: 0 25px 25px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-image {
+    width: 90%;
+    height: auto;
+    max-height: 180px; /* Para que las imágenes se ajusten en la columna */
+    object-fit: cover;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .synopsis-box, .main-image, .image-column-box {
+        width: 100%; /* Ajustar ancho completo en dispositivos pequeños */
+    }
+    .main-image {
+        max-width: 100%; /* Asegurar que la imagen central sea responsiva */
+    }
+    .sub-image {
+        max-height: 150px; /* Ajustar el tamaño de las sub-imágenes en pantallas pequeñas */
+    }
+}
+
+
+
